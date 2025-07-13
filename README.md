@@ -14,3 +14,6 @@ This is a toolbox documentation permitting to review quickly some knowledge
   - SQL injection 
   - Path injection
   - XSS
+
+- Best practices 
+  - Loop 
