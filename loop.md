@@ -15,5 +15,18 @@ for (String xValue : xTab){
 
 ## While
 
+```
+int i=10;
+while(i>0){
+    i=i--;
+}
+```
+
 ## For
 
+```
+StringBuilder sb = new StringBuilder("0,");
+for(int j=1;i<=10;i++){
+    sb.append(j).append(",");
+}
+```
