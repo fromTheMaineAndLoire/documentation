@@ -30,3 +30,16 @@ for(int j=1;i<=10;i++){
     sb.append(j).append(",");
 }
 ```
+
+## Do While
+
+```
+boolean isBoolean=true;
+int i=0;
+do{
+    isBoolean=(i<5)?true:false;
+    i++;
+    
+}while(isBolean);
+
+```
