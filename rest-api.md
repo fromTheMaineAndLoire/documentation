@@ -15,11 +15,21 @@ inside define some methods permitting
 Each method (depending of what you want) is implementing a service.
 
 ```
-@RestController 
+@RestController("/v1/management") 
 public class ProcessFileController{
     
-    @PostMapping("/post-file")
+    @PostMapping(name = "/file")
     pubic void postFile(){
+    ....
+    }
+
+    @GetMapping(name = "/files")
+    pubic void getFiles(){
+    ....
+    }
+
+    @GetMapping(name = "/files/{id}")
+    pubic File getFiles(@PathParam int id){
     ....
     }
 
@@ -45,7 +55,33 @@ public class Party {
     }
 ```
 
-### Data
+### Repository (JpaRepository)
 
-data annotation (@Data)
+Interface
 
+```
+@Repository
+public Interface IPlayerRepository extends JpaRespository(Player,Long){
+
+}
+
+```
+
+### Entity (table)
+
+Table
+
+
+```
+@Entity
+@Table(name = "PLAYER_DB")
+public class Player{
+    
+    @ID
+    @GenerateValue
+    private Long ID;
+
+    @Column(name = 'PLAYER_NAME')
+    private String playerName;
+
+}
